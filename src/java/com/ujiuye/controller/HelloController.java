@@ -1,14 +1,14 @@
 package com.ujiuye.controller;
 
-import com.ujiuye.service.Responsebean;
 import com.ujiuye.service.UserServeice;
+import com.ujiuye.util.Responsebean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/user/")
-public class Controller {
+public class HelloController {
     @Autowired   //(@Autowired会自动找到自己的实现类)
             UserServeice serveice;
 
@@ -24,4 +24,8 @@ public class Controller {
         return  serveice.createCode();
     }
 
+
 }
+
+
+

@@ -255,7 +255,7 @@ public class VerifyCodeUtils{
 
     }
     public static void main(String[] args) throws IOException{
-        File dir = new File("E:/verifies");
+        File dir = new File("E://verifies");
         int w = 200, h = 80;
         for(int i = 0; i < 50; i++){
             String verifyCode = generateVerifyCode(4);
